@@ -1,0 +1,11 @@
+{
+  "name": "GitHub Commits Counter",
+  "version": "0.1",
+  "description": "Add number of commits next to the dates in the commit group headings",
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*/*/commits/*"],
+      "js": ["jquery-1.4.2.min.js", "commits_counter.js"]
+    }
+  ]
+}
